@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="noindex,nofollow"/><meta name="theme-color" content="#19160f"/>
+  <meta name="description" content="Prévia não oficial criada pela waveX para apresentação comercial ao Pão Recheado Hamburgueria, Samambaia Norte."/>
+  <title>Pão Recheado — Conceito de Cardápio | waveX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/estilo.css"/>
+</head>
+<body>
+<div class="demo-banner"><span class="demo-dot"></span><strong>PRÉVIA NÃO OFICIAL</strong><span>Conceito de cardápio desenvolvido pela waveX · Não recebe pedidos</span><a href="proposta.html">Ver proposta da waveX ↗</a></div>
+<header class="site-header" id="inicio"><a class="brand" href="#inicio" aria-label="Pão Recheado, início"><span class="brand-symbol">P<span>ã</span>o<br/><small>RECHEADO</small></span><span class="brand-info">HAMBURGUERIA<span>SAMAMBAIA NORTE · DF</span></span></a><nav class="top-nav"><a href="#destaques">Destaques</a><a href="#experiencia-3d">Experiência 3D</a><a href="#cardapio">Cardápio</a><a href="#como-pedir">Como pedir</a></nav><a class="top-order" href="https://pedido.brendi.com.br/pao-recheado-hamburgueria-samambaia-norte" target="_blank" rel="noopener">Cardápio atual <span>↗</span></a></header>
+<main>
+<section class="hero">
+<div class="hero-grain"></div><div class="hero-content"><span class="eyebrow"><span class="gold-line"></span> ARTESANAL • FEITO PRA MATAR A FOME</span><h1>O SABOR<br/>TEM <em>NOME.</em></h1><p>Hambúrgueres artesanais, pães recheados e combinações que merecem ser o destaque da sua fome.</p><div class="hero-actions"><a class="btn btn-gold" href="#cardapio">Explorar cardápio <span>↓</span></a><a class="btn btn-outline" href="#destaques">Conhecer favoritos ↗</a></div><div class="hero-facts"><span><b>01</b> Pães recheados</span><i></i><span><b>02</b> Burgers artesanais</span><i></i><span><b>03</b> Combos</span></div></div>
+<div class="hero-visual"><div class="photo-halo"></div><div class="hero-photo" role="img" aria-label="Fotografia ilustrativa de hambúrguer artesanal"></div><div class="hero-sticker"><span>DO PÃO</span><b>AO<br/>BURGER</b><span>SEU PRÓXIMO FAVORITO</span></div><span class="hero-pic-label">Imagem ilustrativa · substituída por foto autorizada</span></div>
+<div class="hero-bottom">SABOR DE VERDADE <span>✦</span> PRA QUEM É DE SAMAMBAIA <span>✦</span> FEITO COM CAPRICHO <span>✦</span></div>
+</section>
+<section class="intro-line"><div><span class="mini-label">BEM-VINDO</span><h2>Tem coisa que a gente<br/>bate o olho e <em>já quer.</em></h2></div><p>Uma seleção pensada para abrir o apetite: encontre seu favorito, conheça os ingredientes e navegue sem complicação.</p></section>
+<section class="favorites section" id="destaques"><div class="section-head"><div><span class="mini-label">OS MAIS PEDIDOS</span><h2>Difícil escolher <em>só um.</em></h2></div><p>Produtos em destaque no cardápio publicado pelo estabelecimento.</p></div><div class="favorites-grid" id="favoritesGrid"></div></section>
+
+<section class="xr-section" id="experiencia-3d" aria-labelledby="xrTitle">
+ <div class="xr-intro"><span class="mini-label">UMA EXPERIÊNCIA DO FUTURO</span><h2 id="xrTitle">Seu próximo lanche,<br/><em>em outra dimensão.</em></h2>
+ <p>Gire, aproxime e explore um modelo tridimensional do lanche. No celular compatível, use a câmera para visualizar um exemplo em tamanho aproximado sobre sua mesa.</p>
+ <div class="xr-pills"><span>◈ Gire em 360°</span><span>◈ Zoom de detalhes</span><span>◈ Realidade aumentada*</span></div>
+ <div class="xr-choices" role="group" aria-label="Escolher modelo 3D">
+  <button type="button" class="xr-choice active" data-model="burger-tradicional" aria-pressed="true">Burger Tradicional</button>
+  <button type="button" class="xr-choice" data-model="burger-duplo" aria-pressed="false">Burger Duplo</button>
+  <button type="button" class="xr-choice" data-model="combo-burger" aria-pressed="false">Combo Burger</button>
+  <button type="button" class="xr-choice" data-model="pao-recheado" aria-pressed="false">Pão Recheado</button>
+ </div>
+ <p class="xr-disclaimer">* Modelos 3D autorais <strong>ilustrativos</strong>, não reproduzem exatamente os produtos reais da hamburgueria. O modo câmera/AR depende de aparelho e navegador compatíveis. Não enviamos pedidos nesta prévia.</p>
+ </div>
+ <div class="xr-showcase">
+  <div class="xr-showcase-top"><span><i class="xr-glow"></i> DEMONSTRAÇÃO INTERATIVA</span><span>3D + AR</span></div>
+  <model-viewer id="heroModelViewer" src="assets/modelos/burger-tradicional.glb" alt="Modelo ilustrativo tridimensional de um hambúrguer, criado pela waveX" camera-controls auto-rotate rotation-per-second="12deg" shadow-intensity="1.3" environment-image="neutral" exposure="1.15" ar ar-modes="webxr scene-viewer quick-look" ar-scale="fixed" touch-action="pan-y" interaction-prompt="auto" loading="lazy">
+   <button class="xr-ar-button" slot="ar-button" type="button">▧ Ver na minha mesa (AR)</button>
+   <div slot="poster" class="xr-loading"><img id="heroModelPoster" src="assets/modelos/burger-tradicional.png" alt="Prévia ilustrativa do hambúrguer em 3D"/><span>Preparando o modelo 3D…</span></div>
+  </model-viewer>
+  <div class="xr-showcase-bottom"><span id="xrModelLabel">Burger Tradicional · conceitual</span><span>Arraste para girar ↻</span></div>
+  <div class="xr-mobile-tip">Abra este site no celular para testar a câmera, se o dispositivo suportar AR.</div>
+ </div>
+</section>
+
+<div class="ticker"><div>PÃO RECHEADO <span>✳</span> BURGERS ARTESANAIS <span>✳</span> COMBOS <span>✳</span> PÃO RECHEADO <span>✳</span> BURGERS ARTESANAIS <span>✳</span> COMBOS <span>✳</span></div></div>
+<section class="menu-section section" id="cardapio"><div class="section-head menu-heading"><div><span class="mini-label">EXPLORE OS SABORES</span><h2>Nosso <em>cardápio.</em></h2></div><p>Organizado para facilitar a escolha. Os preços abaixo são referências públicas, sujeitos a atualização.</p></div><div class="filter-tools"><div class="filter-chips" id="filters"></div><label class="search-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="search" type="search" placeholder="Buscar pelo nome ou ingrediente" aria-label="Buscar produtos"/></label></div><div class="menu-count" id="menuCount"></div><div class="product-grid" id="productGrid"></div><div class="empty-state" id="emptyState" hidden>Não encontramos produtos com esse filtro. Experimente outra busca.</div></section>
+<section class="manifesto"><div class="manifesto-photo"><span>ILUSTRATIVO</span></div><div class="manifesto-text"><span class="mini-label">MAIS DO QUE UM LANCHE</span><h2>Seu favorito merece uma <em>boa apresentação.</em></h2><p>Fotos bem escolhidas, ingredientes organizados, categorias objetivas e um caminho simples para fazer o pedido.</p><a class="btn btn-gold" href="https://pedido.brendi.com.br/pao-recheado-hamburgueria-samambaia-norte" target="_blank" rel="noopener">Ir ao pedido oficial ↗</a></div></section>
+<section class="how section" id="como-pedir"><div class="section-head"><div><span class="mini-label">SIMPLES ASSIM</span><h2>Do cardápio ao <em>pedido.</em></h2></div></div><div class="how-grid"><div><span>01</span><h3>Explore</h3><p>Encontre burgers, pães recheados, combos e acompanhamentos.</p></div><div><span>02</span><h3>Escolha</h3><p>Veja fotos ilustrativas, descrições e valores publicados.</p></div><div><span>03</span><h3>Faça seu pedido</h3><p>Na versão demonstrativa, encaminhamos para o sistema oficial existente.</p></div></div></section>
+<section class="nfc-section" id="nfc"><div class="nfc-copy"><span class="mini-label">UMA EXPERIÊNCIA QUE COMEÇA NA MESA</span><h2>O cardápio<br/>a um <em>toque.</em></h2><p>A waveX também pode fornecer plaquinhas de mesa com QR Code e tecnologia NFC, personalizadas para o restaurante.</p><div class="nfc-steps"><div><b>01</b><span>Aproxime um celular compatível com NFC</span></div><div><b>02</b><span>Ou escaneie o QR Code</span></div><div><b>03</b><span>Abra o cardápio sem instalar aplicativos</span></div></div><a href="proposta.html#nfc" class="btn btn-gold">Conhecer a proposta waveX ↗</a></div><div class="nfc-art"><div class="plaque"><span class="plaque-top">PÃO <b>RECHEADO</b></span><span class="plaque-sub">O MELHOR DO CARDÁPIO, A UM TOQUE.</span><div class="plaque-middle"><div class="tap-symbol"><svg width="96" height="96" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"><path d="M45 36V67 M56 28V73 M34 47V55 M66 19V82" opacity=".85"/><path d="M77 27C85 42 85 57 77 73M88 16C103 37 103 63 88 84"/></svg><span>APROXIME</span></div><div class="plaque-qr"><img src="assets/qr-cardapio-atual.png" alt="QR Code de demonstração que abre o cardápio oficial atual"/><span>OU ESCANEIE</span></div></div><span class="plaque-foot">NÃO PRECISA BAIXAR APP</span></div><span class="plaque-caption">Mockup ilustrativo · QR abre o cardápio público atual · NFC físico vendido separadamente</span></div></section>
+</main>
+<footer class="footer"><div><a class="footer-word" href="#inicio">PÃO <em>RECHEADO.</em></a><p>Conceito visual para apresentação comercial. Não é um site oficial da hamburgueria. Disponibilidade e valores devem ser confirmados no cardápio oficial.</p></div><div class="footer-links"><a href="#cardapio">Cardápio</a><a href="https://pedido.brendi.com.br/pao-recheado-hamburgueria-samambaia-norte" target="_blank" rel="noopener">Pedido oficial ↗</a><a href="proposta.html">Proposta waveX ↗</a></div><div class="footer-wave"><img src="assets/wavex-logo.png" alt="Marca waveX"/><span>Prévia criada pela waveX · apresentação não oficial</span></div></footer>
+<div class="selection-bar" id="selectionBar" hidden><div><b id="selectionCount">0 itens</b><span>Seleção demonstrativa, não envia pedidos</span></div><button id="openSelection">Ver seleção <span id="selectionTotal">R$ 0,00</span> →</button></div>
+<div class="modal-shade" id="modalShade" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Fechar janela">×</button><div class="modal-image" id="modalImage"></div><div class="modal-content"><span class="mini-label" id="modalCategory">CARDÁPIO</span><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="modal-price"><span>Valor de referência, a partir de</span><strong id="modalPrice"></strong></div><p class="small-notice">Prévia ilustrativa: opcionais e preços finais devem ser confirmados no sistema oficial.</p><div class="modal-controls"><div class="quantity"><button id="qtyMinus" aria-label="Diminuir quantidade">−</button><span id="qtyValue">1</span><button id="qtyPlus" aria-label="Aumentar quantidade">+</button></div><button class="btn btn-gold" id="addProduct">Adicionar à seleção</button></div></div></div></div>
+<div class="modal-shade" id="selectionShade" hidden><div class="selection-modal" role="dialog" aria-modal="true" aria-labelledby="selectionTitle"><button class="modal-close" id="selectionClose" aria-label="Fechar seleção">×</button><span class="mini-label">EXPERIÊNCIA DEMONSTRATIVA</span><h2 id="selectionTitle">Sua seleção</h2><div id="selectionItems"></div><div class="selection-summary" id="selectionSummary"></div><p class="small-notice">Esta prévia não envia pedidos nem confirma valores. Para comprar, use o canal oficial do estabelecimento.</p><div class="selection-actions"><button id="clearSelection" class="btn btn-outline">Limpar seleção</button><a class="btn btn-gold" href="https://pedido.brendi.com.br/pao-recheado-hamburgueria-samambaia-norte" target="_blank" rel="noopener">Abrir pedido oficial ↗</a></div></div></div>
+
+<div class="modal-shade" id="arShade" hidden>
+ <div class="ar-dialog" role="dialog" aria-modal="true" aria-labelledby="arModalTitle">
+  <button class="modal-close" id="arClose" aria-label="Fechar visualização 3D">×</button>
+  <div class="ar-dialog-copy"><span class="mini-label">PRÉVIA WAVE X · MODELO ILUSTRATIVO</span><h2 id="arModalTitle">Veja em 3D</h2><p id="arModalDescription">Visualização artística, não fotogrametria do produto real.</p></div>
+  <model-viewer id="detailModelViewer" src="assets/modelos/burger-tradicional.glb" alt="Representação artística de um lanche em 3D" camera-controls shadow-intensity="1.1" environment-image="neutral" exposure="1.2" ar ar-modes="webxr scene-viewer quick-look" ar-scale="fixed" touch-action="pan-y" interaction-prompt="auto">
+   <button class="xr-ar-button" slot="ar-button" type="button">▧ Colocar na mesa (AR)</button>
+   <div slot="poster" class="xr-loading"><img id="detailModelPoster" src="assets/modelos/burger-tradicional.png" alt="Prévia ilustrativa do modelo em 3D"/><span>Carregando 3D…</span></div>
+  </model-viewer>
+  <div class="ar-footer"><span>Gire com o dedo ou mouse • Amplie com dois dedos</span><a href="https://pedido.brendi.com.br/pao-recheado-hamburgueria-samambaia-norte" target="_blank" rel="noopener">Cardápio oficial ↗</a></div>
+ </div>
+</div>
+
+<script type="module" src="https://unpkg.com/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
+<script src="assets/cardapio.js" defer></script>
+</body></html>
